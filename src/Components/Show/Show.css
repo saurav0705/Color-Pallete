@@ -1,0 +1,78 @@
+.saved{
+    display: grid;
+    text-align: center;
+    margin:20px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.saved-container{
+    background-color: #202020;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.saved-heading{
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color:white;
+}
+
+.grid-tile{
+padding: 20px;
+color: white;
+font-weight: 500;
+}
+
+
+@media screen and (max-width:600px){
+    .saved{
+        display: block;
+    }
+
+}
+
+.close{
+    
+    display: fixed;
+    left:0;
+    top: 0;
+    text-align: right;
+    font-weight: 900;
+    color: red;
+}
+
+.close-text{
+    color: red;
+    font-size: 32px;
+    
+}
+
+.download{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: fadein 0.5s , fadeout 10s 0.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 100px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 100px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 100px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 100px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }

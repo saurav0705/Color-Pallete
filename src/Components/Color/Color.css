@@ -1,0 +1,21 @@
+.lock{
+    margin-top: 50%;
+    transition-duration: 300ms;
+}
+
+.color-container{
+    transition-duration: 300ms;
+    
+}
+
+@media screen and (max-width:600px){
+    .lock{
+        margin: 0;
+    }
+
+    .color-container{
+        height: 15vh;
+    }
+
+
+}
