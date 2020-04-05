@@ -8,7 +8,7 @@ const Show = ({toggle,save,toast}) => {
         let data = array.map(arr => {
             return arr['background-color'];
         })
-        fileDownload(data,"pallete.txt");
+        fileDownload(data,"palette.txt");
     }
     return (
         <div className="show-all" >
@@ -17,12 +17,12 @@ const Show = ({toggle,save,toast}) => {
                     <MdCancel/>
                 </span>
                 </div>
-            <div className="download">Click on Pallete heading to download that Pallete and on color to copy it to clipboard</div>
+            <div className="download">Click on palette heading to download that palette and on color to copy it to clipboard</div>
             {
             save.map((saveArray,index) => {
                 return (
                     <div className="saved-container">
-                        <div className="saved-heading" onClick={() => downloadFile(saveArray)} >Pallete {index+1}</div>
+                        <div className="saved-heading" onClick={() => downloadFile(saveArray)} >palette {index+1}</div>
                 <div className="saved" key={"saved"+index}>
                     {saveArray.map(color => {return ( <div className="grid-tile" onClick={() => {toast("Copied to clipboard "+color['background-color']);navigator.clipboard.writeText(color['background-color'])}} style={{"backgroundColor":color['background-color'],"color":color['text']}}>{color['background-color']}</div>)})}</div>
                 </div>)
