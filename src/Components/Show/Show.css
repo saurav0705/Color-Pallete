@@ -17,6 +17,7 @@
     font-size: 32px;
     font-weight: 600;
     color:white;
+    text-transform: uppercase;
 }
 
 .grid-tile{
